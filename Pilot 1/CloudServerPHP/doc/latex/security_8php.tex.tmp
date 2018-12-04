@@ -1,0 +1,113 @@
+\hypertarget{security_8php}{}\section{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/security/security.php File Reference}
+\label{security_8php}\index{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/security/security.\+php@{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/security/security.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{security_8php_a4307f3ceb1b77b46b43f3f1b47351d58}{check\+User\+Access}} (\$id)
+\item 
+\mbox{\hyperlink{security_8php_aa5ecb17c2198bf80eebdb9c160d72166}{is\+Primary\+User}} ()
+\item 
+\mbox{\hyperlink{security_8php_a3e679550eb1b386501ee1cfa526276a1}{is\+Secondary\+User}} ()
+\item 
+\mbox{\hyperlink{security_8php_ae02fcab617b478cba90c4bcc17b81602}{check\+I\+Paddress}} ()
+\item 
+\mbox{\hyperlink{security_8php_a580c7a2514d6f09cec983a3a8c8e414a}{block\+IP}} (\$username)
+\item 
+\mbox{\hyperlink{security_8php_abddcb605984b484876498005966cc86d}{is\+I\+P\+Blocked}} ()
+\item 
+\mbox{\hyperlink{security_8php_af2faa3bf585ce4fde3886e3f231b8827}{print\+Session}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{security_8php_abefb3c26429d514777313e9a63d7cbac}{\$session}} = \mbox{\hyperlink{class_session_ac93fbec81f07e5d15f80db907e63dc10}{Session\+::get\+Instance}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{security_8php_a580c7a2514d6f09cec983a3a8c8e414a}\label{security_8php_a580c7a2514d6f09cec983a3a8c8e414a}} 
+\index{security.\+php@{security.\+php}!block\+IP@{block\+IP}}
+\index{block\+IP@{block\+IP}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{block\+I\+P()}{blockIP()}}
+{\footnotesize\ttfamily block\+IP (\begin{DoxyParamCaption}\item[{}]{\$username }\end{DoxyParamCaption})}
+
+\mbox{[}block\+IP (Procedure) adds the current user IP to DB ipblocked table which is checkid each log in, checks whether user trying to log in exists thereby it creates a  for him\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string\mbox{]}} & \$username \mbox{[}The url parameter username.\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}V\+O\+ID\mbox{]} \mbox{[}description\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{security_8php_ae02fcab617b478cba90c4bcc17b81602}\label{security_8php_ae02fcab617b478cba90c4bcc17b81602}} 
+\index{security.\+php@{security.\+php}!check\+I\+Paddress@{check\+I\+Paddress}}
+\index{check\+I\+Paddress@{check\+I\+Paddress}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{check\+I\+Paddress()}{checkIPaddress()}}
+{\footnotesize\ttfamily check\+I\+Paddress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}check\+I\+Paddress Procedure Check wheter the user ip device is the same each login. Whether is the same does nothing, but does not created a  in DB for user \mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}V\+O\+ID\mbox{]} \mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{security_8php_a4307f3ceb1b77b46b43f3f1b47351d58}\label{security_8php_a4307f3ceb1b77b46b43f3f1b47351d58}} 
+\index{security.\+php@{security.\+php}!check\+User\+Access@{check\+User\+Access}}
+\index{check\+User\+Access@{check\+User\+Access}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{check\+User\+Access()}{checkUserAccess()}}
+{\footnotesize\ttfamily check\+User\+Access (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+\mbox{[}check\+User\+Access check if user has started a session at server and therefore, cheking the session, to know wheter user go on log or not. \mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}int\mbox{]}} & \$id \mbox{[}Parameter from url or user cookie Userid \mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}Boolean\mbox{]} \mbox{[}User session started\mbox{]} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{security_8php_abddcb605984b484876498005966cc86d}\label{security_8php_abddcb605984b484876498005966cc86d}} 
+\index{security.\+php@{security.\+php}!is\+I\+P\+Blocked@{is\+I\+P\+Blocked}}
+\index{is\+I\+P\+Blocked@{is\+I\+P\+Blocked}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{is\+I\+P\+Blocked()}{isIPBlocked()}}
+{\footnotesize\ttfamily is\+I\+P\+Blocked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}is\+I\+P\+Blocked checks if the current access user IP (getting from \$session) is in DB ipblocked table\mbox{]} \begin{DoxyReturn}{Returns}
+boolean \mbox{[}Exists IP in ipblocked\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{security_8php_aa5ecb17c2198bf80eebdb9c160d72166}\label{security_8php_aa5ecb17c2198bf80eebdb9c160d72166}} 
+\index{security.\+php@{security.\+php}!is\+Primary\+User@{is\+Primary\+User}}
+\index{is\+Primary\+User@{is\+Primary\+User}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{is\+Primary\+User()}{isPrimaryUser()}}
+{\footnotesize\ttfamily is\+Primary\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}is\+Primary\+User check whether user is a Primary user checking the rol from session, previusly retrived from DB users table \mbox{]} \begin{DoxyReturn}{Returns}
+boolean \mbox{[}User is primary user R\+OL==1\mbox{]} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{security_8php_a3e679550eb1b386501ee1cfa526276a1}\label{security_8php_a3e679550eb1b386501ee1cfa526276a1}} 
+\index{security.\+php@{security.\+php}!is\+Secondary\+User@{is\+Secondary\+User}}
+\index{is\+Secondary\+User@{is\+Secondary\+User}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{is\+Secondary\+User()}{isSecondaryUser()}}
+{\footnotesize\ttfamily is\+Secondary\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}is\+Secondary\+User check rol over whether user is secondary user\mbox{]} \begin{DoxyReturn}{Returns}
+boolean \mbox{[}User is secondary user R\+O\+L!=1\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{security_8php_af2faa3bf585ce4fde3886e3f231b8827}\label{security_8php_af2faa3bf585ce4fde3886e3f231b8827}} 
+\index{security.\+php@{security.\+php}!print\+Session@{print\+Session}}
+\index{print\+Session@{print\+Session}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{print\+Session()}{printSession()}}
+{\footnotesize\ttfamily print\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}print\+Session Prints the current user session \mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}V\+O\+ID\mbox{]} \mbox{[}var\+\_\+dump of current user \$session object\mbox{]} 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{security_8php_abefb3c26429d514777313e9a63d7cbac}\label{security_8php_abefb3c26429d514777313e9a63d7cbac}} 
+\index{security.\+php@{security.\+php}!\$session@{\$session}}
+\index{\$session@{\$session}!security.\+php@{security.\+php}}
+\subsubsection{\texorpdfstring{\$session}{$session}}
+{\footnotesize\ttfamily \$session = \mbox{\hyperlink{class_session_ac93fbec81f07e5d15f80db907e63dc10}{Session\+::get\+Instance}}()}
+

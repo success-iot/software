@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.mdx.success.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!--<uses-permission android:name="android.permission.READ_PROFILE" />-->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+    <application
+        android:name="uk.mdx.success.Main"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SUCCESS PROJECT - Pilot"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".emotional_test" />
+        <activity android:name="uk.mdx.success.activity.MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="uk.mdx.success.accessRequest.accessRequestList"
+            android:label="SUCCESS PROJECT - Pilot"/>
+        <activity android:name="uk.mdx.success.outcome.outcomesList"
+            android:label="SUCCESS PROJECT - Pilot"/>
+        <activity android:name="uk.mdx.success.access.accessList"
+            android:label="SUCCESS PROJECT - Pilot"/>
+        <activity android:name="uk.mdx.success.accessRequest.accessRequestActivity"
+            android:label="SUCCESS PROJECT - Pilot"/>
+        <activity android:name="uk.mdx.success.message.messagesList"
+        android:label="SUCCESS PROJECT - Pilot"/>
+        <activity android:name="uk.mdx.success.message.messageActivity"
+            android:label="SUCCESS PROJECT - Pilot"/>
+        <activity android:name="uk.mdx.success.access.accessActivity"
+            android:label="SUCCESS PROJECT - Pilot"/>
+        <activity
+            android:name="uk.mdx.success.activity.LoginActivity"
+            android:label="SUCCESS PROJECT - Pilot">
+            //android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+\hypertarget{server_8php}{}\section{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/server.php File Reference}
+\label{server_8php}\index{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/server.\+php@{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/server.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8php_a12661b2fc0f57f97e30a1620889ce9c6}{\$method}} = \$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(!isset(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}P\+A\+T\+H\+\_\+\+I\+N\+FO\textquotesingle{}\mbox{]})) \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}P\+A\+T\+H\+\_\+\+I\+N\+FO\textquotesingle{}\mbox{]}==\textquotesingle{}/\textquotesingle{}) \mbox{\hyperlink{server_8php_ab3ec6974bfb1f783f0795e30a91875ec}{\$request}} = explode(\textquotesingle{}/\textquotesingle{}, trim(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}P\+A\+T\+H\+\_\+\+I\+N\+FO\textquotesingle{}\mbox{]},\textquotesingle{}/\textquotesingle{}))
+\item 
+\mbox{\hyperlink{server_8php_a69b271260be394b90709736cccb22c76}{\$input}} = json\+\_\+decode(file\+\_\+get\+\_\+contents(\textquotesingle{}php\+://input\textquotesingle{}))
+\item 
+\mbox{\hyperlink{server_8php_adc0aed0ec6bf7959e25cdf7dae66b419}{\$resource\+Name}} = ucfirst(\$request\mbox{[}0\mbox{]})
+\item 
+\mbox{\hyperlink{server_8php_a45672661be8a848a007ec8ea5a2c517a}{\$resource\+Path}} = \char`\"{}resources/\char`\"{}. \$request\mbox{[}0\mbox{]} . \char`\"{}.php\char`\"{}
+\item 
+\mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(file\+\_\+exists(\$resource\+Path)) \mbox{\hyperlink{server_8php_a1b9d67b931db67e9db40d1770cb07eae}{else}}
+\item 
+\mbox{\hyperlink{server_8php_abd4c7b8b084214b8d2533ba07fce6b83}{\$resource}} = new \$resource\+Name()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{server_8php_a69b271260be394b90709736cccb22c76}\label{server_8php_a69b271260be394b90709736cccb22c76}} 
+\index{server.\+php@{server.\+php}!\$input@{\$input}}
+\index{\$input@{\$input}!server.\+php@{server.\+php}}
+\subsubsection{\texorpdfstring{\$input}{$input}}
+{\footnotesize\ttfamily \$input = json\+\_\+decode(file\+\_\+get\+\_\+contents(\textquotesingle{}php\+://input\textquotesingle{}))}
+
+\mbox{\Hypertarget{server_8php_a12661b2fc0f57f97e30a1620889ce9c6}\label{server_8php_a12661b2fc0f57f97e30a1620889ce9c6}} 
+\index{server.\+php@{server.\+php}!\$method@{\$method}}
+\index{\$method@{\$method}!server.\+php@{server.\+php}}
+\subsubsection{\texorpdfstring{\$method}{$method}}
+{\footnotesize\ttfamily \$method = \$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{server_8php_ab3ec6974bfb1f783f0795e30a91875ec}\label{server_8php_ab3ec6974bfb1f783f0795e30a91875ec}} 
+\index{server.\+php@{server.\+php}!\$request@{\$request}}
+\index{\$request@{\$request}!server.\+php@{server.\+php}}
+\subsubsection{\texorpdfstring{\$request}{$request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}} (!isset( \$\+\_\+\+S\+E\+R\+V\+ER\mbox{[} \textquotesingle{}P\+A\+T\+H\+\_\+\+I\+N\+FO\textquotesingle{}\mbox{]})) \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}} ( \$\+\_\+\+S\+E\+R\+V\+ER\mbox{[} \textquotesingle{}P\+A\+T\+H\+\_\+\+I\+N\+FO\textquotesingle{}\mbox{]}==\textquotesingle{}/\textquotesingle{}) \$request = explode(\textquotesingle{}/\textquotesingle{}, trim(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}P\+A\+T\+H\+\_\+\+I\+N\+FO\textquotesingle{}\mbox{]},\textquotesingle{}/\textquotesingle{}))}
+
+\mbox{\Hypertarget{server_8php_abd4c7b8b084214b8d2533ba07fce6b83}\label{server_8php_abd4c7b8b084214b8d2533ba07fce6b83}} 
+\index{server.\+php@{server.\+php}!\$resource@{\$resource}}
+\index{\$resource@{\$resource}!server.\+php@{server.\+php}}
+\subsubsection{\texorpdfstring{\$resource}{$resource}}
+{\footnotesize\ttfamily \$resource = new \$resource\+Name()}
+
+\mbox{\Hypertarget{server_8php_adc0aed0ec6bf7959e25cdf7dae66b419}\label{server_8php_adc0aed0ec6bf7959e25cdf7dae66b419}} 
+\index{server.\+php@{server.\+php}!\$resource\+Name@{\$resource\+Name}}
+\index{\$resource\+Name@{\$resource\+Name}!server.\+php@{server.\+php}}
+\subsubsection{\texorpdfstring{\$resource\+Name}{$resourceName}}
+{\footnotesize\ttfamily \$resource\+Name = ucfirst(\$request\mbox{[}0\mbox{]})}
+
+\mbox{[}\$resource crates an object sort of resource requested\mbox{]} \mbox{\Hypertarget{server_8php_a45672661be8a848a007ec8ea5a2c517a}\label{server_8php_a45672661be8a848a007ec8ea5a2c517a}} 
+\index{server.\+php@{server.\+php}!\$resource\+Path@{\$resource\+Path}}
+\index{\$resource\+Path@{\$resource\+Path}!server.\+php@{server.\+php}}
+\subsubsection{\texorpdfstring{\$resource\+Path}{$resourcePath}}
+{\footnotesize\ttfamily \$resource\+Path = \char`\"{}resources/\char`\"{}. \$request\mbox{[}0\mbox{]} . \char`\"{}.php\char`\"{}}
+
+\mbox{\Hypertarget{server_8php_a1b9d67b931db67e9db40d1770cb07eae}\label{server_8php_a1b9d67b931db67e9db40d1770cb07eae}} 
+\index{server.\+php@{server.\+php}!else@{else}}
+\index{else@{else}!server.\+php@{server.\+php}}
+\subsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}} (isset( \$request\mbox{[}1\mbox{]})) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+              echo \textcolor{stringliteral}{"Resource not found"}
+\end{DoxyCode}

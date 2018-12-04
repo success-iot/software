@@ -1,0 +1,15 @@
+digraph "PUT"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node11 [label="PUT",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="isPrimaryUser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$security_8php.html#aa5ecb17c2198bf80eebdb9c160d72166"];
+  Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Resource\\setUserkey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_resource.html#a02cc9f00efbda79bb7617fce8bcd1ef4"];
+  Node11 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Resource\\getPUTValues",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_resource.html#a6fa5ac14a003a305ce0c3aaa5612dc49"];
+  Node11 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Resource\\getValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_resource.html#ab1207918a97f72110966d1bbb95ffec0"];
+}

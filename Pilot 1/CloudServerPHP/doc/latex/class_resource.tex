@@ -1,0 +1,187 @@
+\hypertarget{class_resource}{}\section{Resource Class Reference}
+\label{class_resource}\index{Resource@{Resource}}
+
+
+Inheritance diagram for Resource\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resource_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_resource_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resource_a6155e84d5ffcbc4ae944e98f59d49935}{G\+ET}} ()
+\item 
+\mbox{\hyperlink{class_resource_a2a21af1d6aaaa31249485c753b86eba1}{P\+UT}} ()
+\item 
+\mbox{\hyperlink{class_resource_a2a7e865a6254f6af7005197d30ad1cc0}{P\+O\+ST}} ()
+\item 
+\mbox{\hyperlink{class_resource_ab31369bc9c8f31518ed38c1949beb791}{D\+E\+L\+E\+TE}} ()
+\item 
+\mbox{\hyperlink{class_resource_a6fa5ac14a003a305ce0c3aaa5612dc49}{get\+P\+U\+T\+Values}} (\$input)
+\item 
+\mbox{\hyperlink{class_resource_abe4378dfc123f2572b60965349062654}{get\+P\+O\+S\+T\+Values}} (\$input)
+\item 
+\mbox{\hyperlink{class_resource_a02cc9f00efbda79bb7617fce8bcd1ef4}{set\+Userkey}} (\$new)
+\item 
+\mbox{\hyperlink{class_resource_ab1207918a97f72110966d1bbb95ffec0}{get\+Value}} (\$key, \$search)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resource_ab1e57a75259c0dc7fd585eddb5066828}{\$user\+Key}} =\char`\"{}iduser\char`\"{}
+\item 
+\mbox{\hyperlink{class_resource_af59a5f7cd609e592c41dc3643efd3c98}{\$query}}
+\item 
+\mbox{\hyperlink{class_resource_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{[}Model \mbox{\hyperlink{class_resource}{Resource}} relate DB and P\+HP Object. Implements C\+R\+UD Methods necesaries to R\+E\+ST A\+PI. \mbox{]} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_resource_a095c5d389db211932136b53f25f39685}\label{class_resource_a095c5d389db211932136b53f25f39685}} 
+\index{Resource@{Resource}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}\+\_\+\+\_\+construct create a new connection for resource. Global session is used in all methods for secuerity reason. \mbox{]} \mbox{\Hypertarget{class_resource_a421831a265621325e1fdd19aace0c758}\label{class_resource_a421831a265621325e1fdd19aace0c758}} 
+\index{Resource@{Resource}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}\+\_\+\+\_\+destruct ensures the DB connection is closed\mbox{]} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_ab31369bc9c8f31518ed38c1949beb791}\label{class_resource_ab31369bc9c8f31518ed38c1949beb791}} 
+\index{Resource@{Resource}!D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}}
+\index{D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{D\+E\+L\+E\+T\+E()}{DELETE()}}
+{\footnotesize\ttfamily D\+E\+L\+E\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Implements D\+E\+L\+E\+TE method to erase elements. \begin{DoxyReturn}{Returns}
+\mbox{[}J\+S\+ON\mbox{]} \mbox{[}state operation\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_a6155e84d5ffcbc4ae944e98f59d49935}\label{class_resource_a6155e84d5ffcbc4ae944e98f59d49935}} 
+\index{Resource@{Resource}!G\+ET@{G\+ET}}
+\index{G\+ET@{G\+ET}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{G\+E\+T()}{GET()}}
+{\footnotesize\ttfamily G\+ET (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{[}G\+ET retrieve the rows from a resource. Launch a query from child object and generate a J\+S\+ON to response. Childs use \$key parameter to select one row.\mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}J\+S\+ON\mbox{]} \mbox{[}state operation\mbox{]} 
+\end{DoxyReturn}
+Generate a J\+S\+ON response \mbox{\Hypertarget{class_resource_abe4378dfc123f2572b60965349062654}\label{class_resource_abe4378dfc123f2572b60965349062654}} 
+\index{Resource@{Resource}!get\+P\+O\+S\+T\+Values@{get\+P\+O\+S\+T\+Values}}
+\index{get\+P\+O\+S\+T\+Values@{get\+P\+O\+S\+T\+Values}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{get\+P\+O\+S\+T\+Values()}{getPOSTValues()}}
+{\footnotesize\ttfamily get\+P\+O\+S\+T\+Values (\begin{DoxyParamCaption}\item[{}]{\$input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extract the field from input P\+O\+ST. Extract the field from input P\+O\+ST Each \textquotesingle{}son\textquotesingle{} class must to redefine this method and filter the fields can be created. However alwais discard the userid, for securtiy it set with session userid \mbox{[}get\+P\+O\+S\+T\+Values creates an appropaite tail mysql query string to insert database record.\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\+J\+S\+O\+N\mbox{]}} & \$input \mbox{[}field\+:values for new record\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}string\mbox{]} \mbox{[}tail of insert query string, pairs of fields-\/values\mbox{]} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_resource_a6fa5ac14a003a305ce0c3aaa5612dc49}\label{class_resource_a6fa5ac14a003a305ce0c3aaa5612dc49}} 
+\index{Resource@{Resource}!get\+P\+U\+T\+Values@{get\+P\+U\+T\+Values}}
+\index{get\+P\+U\+T\+Values@{get\+P\+U\+T\+Values}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{get\+P\+U\+T\+Values()}{getPUTValues()}}
+{\footnotesize\ttfamily get\+P\+U\+T\+Values (\begin{DoxyParamCaption}\item[{}]{\$input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{[}get\+P\+U\+T\+Values creates an appropaite tail mysql query string to update database record. Each child class must to redefine this method and filter the fields can be modified However alwais discard the userid, for securtiy it set with session userid and the reiurce key thats is stract from U\+RL.\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\+J\+S\+O\+N\mbox{]}} & \$input \mbox{[}fields\+:values to update database\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}string\mbox{]} \mbox{[}tail of update query string pairs of fields-\/values\mbox{]} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_resource_ab1207918a97f72110966d1bbb95ffec0}\label{class_resource_ab1207918a97f72110966d1bbb95ffec0}} 
+\index{Resource@{Resource}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily get\+Value (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$search }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{[}get\+Value retrieves a single value from a record chosose (the table is the current class which object belongs)\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\$int\mbox{]}} & \$key \mbox{[}record to find\mbox{]} \\
+\hline
+{\em \mbox{[}\$field\mbox{]}} & \$search \mbox{[}field from record\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}\$string\mbox{]} \mbox{[}value from \$serach column from record id=\$key \mbox{]} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_resource_a2a7e865a6254f6af7005197d30ad1cc0}\label{class_resource_a2a7e865a6254f6af7005197d30ad1cc0}} 
+\index{Resource@{Resource}!P\+O\+ST@{P\+O\+ST}}
+\index{P\+O\+ST@{P\+O\+ST}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{P\+O\+S\+T()}{POST()}}
+{\footnotesize\ttfamily P\+O\+ST (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{[}P\+O\+ST Implements P\+O\+ST method to create new elements. \mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}J\+S\+ON\mbox{]} \mbox{[}state operation\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_a2a21af1d6aaaa31249485c753b86eba1}\label{class_resource_a2a21af1d6aaaa31249485c753b86eba1}} 
+\index{Resource@{Resource}!P\+UT@{P\+UT}}
+\index{P\+UT@{P\+UT}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{P\+U\+T()}{PUT()}}
+{\footnotesize\ttfamily P\+UT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{[}P\+UT Implements P\+UT method to update a resource.\mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}J\+S\+ON\mbox{]} \mbox{[}state operation\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_a02cc9f00efbda79bb7617fce8bcd1ef4}\label{class_resource_a02cc9f00efbda79bb7617fce8bcd1ef4}} 
+\index{Resource@{Resource}!set\+Userkey@{set\+Userkey}}
+\index{set\+Userkey@{set\+Userkey}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{set\+Userkey()}{setUserkey()}}
+{\footnotesize\ttfamily set\+Userkey (\begin{DoxyParamCaption}\item[{}]{\$new }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{[}set\+Userkey changes \$this-\/$>$userkey for internal logical aims\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string\mbox{]}} & \$new \mbox{[}new name of id to be used to look for in current object resource\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_resource_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{class_resource_a0d9c79b9b86b3f5891c6d3892f12c6a0}} 
+\index{Resource@{Resource}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{\$connection}{$connection}}
+{\footnotesize\ttfamily \$connection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_resource_af59a5f7cd609e592c41dc3643efd3c98}\label{class_resource_af59a5f7cd609e592c41dc3643efd3c98}} 
+\index{Resource@{Resource}!\$query@{\$query}}
+\index{\$query@{\$query}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{\$query}{$query}}
+{\footnotesize\ttfamily \$query\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_resource_ab1e57a75259c0dc7fd585eddb5066828}\label{class_resource_ab1e57a75259c0dc7fd585eddb5066828}} 
+\index{Resource@{Resource}!\$user\+Key@{\$user\+Key}}
+\index{\$user\+Key@{\$user\+Key}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{\$user\+Key}{$userKey}}
+{\footnotesize\ttfamily \$user\+Key =\char`\"{}iduser\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/resources/\mbox{\hyperlink{resource_abstract_8php}{resource\+Abstract.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{class_accessrequest}{}\section{Accessrequest Class Reference}
+\label{class_accessrequest}\index{Accessrequest@{Accessrequest}}
+
+
+Inheritance diagram for Accessrequest\+:
+% FIG 0
+
+
+Collaboration diagram for Accessrequest\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_accessrequest_a7490aac9922424f1e605adf9cda9a78b}{G\+ET}} (\$key)
+\item 
+\mbox{\hyperlink{class_accessrequest_aea3bf4cb6556d5b12c15f871fc0960f6}{P\+O\+ST}} (\$input)
+\item 
+\mbox{\hyperlink{class_accessrequest_ad17c66e0ea82e9537b258d49e61868d8}{P\+UT}} (\$key, \$input)
+\item 
+\mbox{\hyperlink{class_accessrequest_a10abe19fb01e7c9a2b88104cf8afc666}{D\+E\+L\+E\+TE}} (\$key)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_accessrequest_ae8876a14058f368335baccf35af4a22b}{\$table}} = \char`\"{}accessrequest\char`\"{}
+\item 
+\mbox{\hyperlink{class_accessrequest_aebf9a45aba50bace51a0400cdafdd8d3}{\$resourcekey}} = \textquotesingle{}idrequest\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{class_accessrequest}{Accessrequest}} manages the C\+R\+UD methods for \mbox{\hyperlink{class_accessrequest}{Accessrequest}} resource of DB, which are the request from users to access other primary users resources\mbox{]} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_accessrequest_a10abe19fb01e7c9a2b88104cf8afc666}\label{class_accessrequest_a10abe19fb01e7c9a2b88104cf8afc666}} 
+\index{Accessrequest@{Accessrequest}!D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}}
+\index{D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}!Accessrequest@{Accessrequest}}
+\subsubsection{\texorpdfstring{D\+E\+L\+E\+T\+E()}{DELETE()}}
+{\footnotesize\ttfamily D\+E\+L\+E\+TE (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{[}D\+E\+L\+E\+TE removes requests \$key form DB. N\+O\+TE\+: just user who creates it can delete.\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}type\mbox{]}} & \$key \mbox{[}description\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_accessrequest_a7490aac9922424f1e605adf9cda9a78b}\label{class_accessrequest_a7490aac9922424f1e605adf9cda9a78b}} 
+\index{Accessrequest@{Accessrequest}!G\+ET@{G\+ET}}
+\index{G\+ET@{G\+ET}!Accessrequest@{Accessrequest}}
+\subsubsection{\texorpdfstring{G\+E\+T()}{GET()}}
+{\footnotesize\ttfamily G\+ET (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{[}G\+ET Creates the correct query to retrieve the records from DB. \mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}type\mbox{]}} & \$key \mbox{[}Retrieve just the \$key record comparing with \$resourcekey var C\+L\+A\+SS\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_accessrequest_aea3bf4cb6556d5b12c15f871fc0960f6}\label{class_accessrequest_aea3bf4cb6556d5b12c15f871fc0960f6}} 
+\index{Accessrequest@{Accessrequest}!P\+O\+ST@{P\+O\+ST}}
+\index{P\+O\+ST@{P\+O\+ST}!Accessrequest@{Accessrequest}}
+\subsubsection{\texorpdfstring{P\+O\+S\+T()}{POST()}}
+{\footnotesize\ttfamily P\+O\+ST (\begin{DoxyParamCaption}\item[{}]{\$input }\end{DoxyParamCaption})}
+
+\mbox{[}P\+O\+ST Create the apropiate query to create a new element in DB of this resource. N\+O\+TE\+: a primary user can not create this sort of resoruce\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\+String\mbox{]}} & \$input \mbox{[}Parameters needed to create a new DB record\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_accessrequest_ad17c66e0ea82e9537b258d49e61868d8}\label{class_accessrequest_ad17c66e0ea82e9537b258d49e61868d8}} 
+\index{Accessrequest@{Accessrequest}!P\+UT@{P\+UT}}
+\index{P\+UT@{P\+UT}!Accessrequest@{Accessrequest}}
+\subsubsection{\texorpdfstring{P\+U\+T()}{PUT()}}
+{\footnotesize\ttfamily P\+UT (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$input }\end{DoxyParamCaption})}
+
+\mbox{[}P\+UT modifies the resource \$key with the \$inputs values, thus delete or create a \mbox{\hyperlink{class_access}{Access}} record whether neccesary. N\+O\+TE\+: just primary users can run this methods\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}interface\mbox{]}} & \$key \mbox{[}id of db resource table to upgrade\mbox{]} \\
+\hline
+{\em \mbox{[}\+J\+S\+O\+N\mbox{]}} & \$input \mbox{[}fields to modify\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 5
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_accessrequest_aebf9a45aba50bace51a0400cdafdd8d3}\label{class_accessrequest_aebf9a45aba50bace51a0400cdafdd8d3}} 
+\index{Accessrequest@{Accessrequest}!\$resourcekey@{\$resourcekey}}
+\index{\$resourcekey@{\$resourcekey}!Accessrequest@{Accessrequest}}
+\subsubsection{\texorpdfstring{\$resourcekey}{$resourcekey}}
+{\footnotesize\ttfamily \$resourcekey = \textquotesingle{}idrequest\textquotesingle{}}
+
+\mbox{\Hypertarget{class_accessrequest_ae8876a14058f368335baccf35af4a22b}\label{class_accessrequest_ae8876a14058f368335baccf35af4a22b}} 
+\index{Accessrequest@{Accessrequest}!\$table@{\$table}}
+\index{\$table@{\$table}!Accessrequest@{Accessrequest}}
+\subsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily \$table = \char`\"{}accessrequest\char`\"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/resources/\mbox{\hyperlink{accessrequest_8php}{accessrequest.\+php}}\end{DoxyCompactItemize}

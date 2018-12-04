@@ -1,0 +1,13 @@
+digraph "getNameIdColumn"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node37 [label="getNameIdColumn",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node37 -> Node38 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="query",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_my_sql_conection.html#ac9fddec3f6bd1db128887a1b211d90f0"];
+  Node38 -> Node39 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_my_sql_conection.html#a43b8d30b879d4f09ceb059b02af2bc02"];
+  Node37 -> Node40 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="getResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_my_sql_conection.html#ae077eb8a032a325ceb939bfabfa5f472"];
+}

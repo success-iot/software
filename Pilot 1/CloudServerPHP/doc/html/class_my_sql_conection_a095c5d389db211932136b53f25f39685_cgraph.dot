@@ -1,0 +1,9 @@
+digraph "__construct"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="__construct",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_my_sql_conection.html#a43b8d30b879d4f09ceb059b02af2bc02"];
+}

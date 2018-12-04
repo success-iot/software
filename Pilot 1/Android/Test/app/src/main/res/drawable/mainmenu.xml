@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shape="rectangle">
+
+    <corners
+        android:bottomRightRadius="10dp"
+        android:radius="10dp"
+        />
+
+    <gradient
+        android:angle="45"
+
+        android:endColor="#01f1fa"
+
+        android:startColor="#0189ff"
+        android:type="linear" />
+
+    <!--If your shape requires only one solid color-->
+    <solid
+        android:color="#FFFFFF" />
+
+    <size
+        android:width="82dp"
+        android:height="82dp" />
+
+    <stroke
+        android:width="2dp"
+        android:color="#000" />
+
+   </shape>
