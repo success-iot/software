@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:id="@id/title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="REQUEST ACCESS"-->
+        <!--android:padding="20px"-->
+        <!--android:background="@drawable/title"/>-->
+
+    <include layout="@layout/header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:id="@+id/textBox"
+        android:layout_margin="10px"
+        android:padding="10px"
+        >
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:textSize="30sp"
+                    android:text="User"/>
+                <TextView
+                    android:id="@+id/usermsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/username"
+                    android:textSize="30sp"
+                    android:paddingLeft="5dp"
+
+                    android:text=" requests access to view your data."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/messagesbox"
+                    android:layout_below="@+id/usermsg"
+                    android:textSize="30sp"
+                    android:layout_margin="20px"
+                    android:padding="10dp"
+                    android:text="Do you want to grant the user permission to view your data?"/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons"
+        android:layout_below="@+id/textBox"
+        android:gravity="center"
+        >
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="accept"
+                    android:text="Accept" />
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/deny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/accept"
+                    android:onClick="deny"
+                    android:text="Deny" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

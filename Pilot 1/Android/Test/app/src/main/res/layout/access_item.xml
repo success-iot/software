@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <include layout="@layout/header"
+        android:id="@+id/header"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/header"
+        android:paddingLeft="20dp"
+        android:text="USER"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/username"
+        android:layout_below="@id/header"
+        android:paddingLeft="5dp"
+        android:text=" has access to your outcomes"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:padding="30dp"
+        android:textSize="20sp"
+        android:text="Press Revoke button to forbide"/>
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/revoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/question"
+        android:onClick="revokeGrant"
+        android:layout_below="@id/question"
+        android:text="revoke" />
+
+
+</RelativeLayout>

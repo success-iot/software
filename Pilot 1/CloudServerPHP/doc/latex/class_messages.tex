@@ -1,0 +1,157 @@
+\hypertarget{class_messages}{}\section{Messages Class Reference}
+\label{class_messages}\index{Messages@{Messages}}
+
+
+Inheritance diagram for Messages\+:
+% FIG 0
+
+
+Collaboration diagram for Messages\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_messages_a6155e84d5ffcbc4ae944e98f59d49935}{G\+ET}} ()
+\item 
+\mbox{\hyperlink{class_messages_a2a7e865a6254f6af7005197d30ad1cc0}{P\+O\+ST}} ()
+\item 
+\mbox{\hyperlink{class_messages_afc8eb51e951dd8fad1e318be851285ef}{P\+UT}} (\$key)
+\item 
+\mbox{\hyperlink{class_messages_ab31369bc9c8f31518ed38c1949beb791}{D\+E\+L\+E\+TE}} ()
+\item 
+\mbox{\hyperlink{class_messages_a625b4df587c67708409abc575f514e47}{create\+Message}} (\$iduser, \$type, \$body)
+\item 
+\mbox{\hyperlink{class_messages_abe4378dfc123f2572b60965349062654}{get\+P\+O\+S\+T\+Values}} (\$input)
+\item 
+\mbox{\hyperlink{class_messages_ab62572471dcfdfd3352f83a82ee12925}{broad\+Cast\+Read}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_messages_ae8876a14058f368335baccf35af4a22b}{\$table}} = \char`\"{}messages\char`\"{}
+\item 
+\mbox{\hyperlink{class_messages_aebf9a45aba50bace51a0400cdafdd8d3}{\$resourcekey}} = \char`\"{}idmessage\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_messages_afa3b0388d92464be7fe8b3385bd4d6ad}{\$\+M\+S\+G\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{class_messages}{Messages}} manages the C\+R\+UD methods for \mbox{\hyperlink{class_messages}{Messages}} resource of DB. Which represents security messages for users. Also it offers funcitons to allow kernel manage the messeges.\mbox{]} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_messages_ab62572471dcfdfd3352f83a82ee12925}\label{class_messages_ab62572471dcfdfd3352f83a82ee12925}} 
+\index{Messages@{Messages}!broad\+Cast\+Read@{broad\+Cast\+Read}}
+\index{broad\+Cast\+Read@{broad\+Cast\+Read}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{broad\+Cast\+Read()}{broadCastRead()}}
+{\footnotesize\ttfamily broad\+Cast\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}broad\+Cast\+Read creates a new record for each user whose data are accesses for current user\mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}V\+O\+ID\mbox{]} \mbox{[}description\mbox{]} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_messages_a625b4df587c67708409abc575f514e47}\label{class_messages_a625b4df587c67708409abc575f514e47}} 
+\index{Messages@{Messages}!create\+Message@{create\+Message}}
+\index{create\+Message@{create\+Message}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{create\+Message()}{createMessage()}}
+{\footnotesize\ttfamily create\+Message (\begin{DoxyParamCaption}\item[{}]{\$iduser,  }\item[{}]{\$type,  }\item[{}]{\$body }\end{DoxyParamCaption})}
+
+User id is ommit for security reason chose from session \mbox{[}create\+Message creates a new record for a user\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\+String\mbox{]}} & \$iduser \mbox{[}User id who will read/be affected the msg\mbox{]} \\
+\hline
+{\em \mbox{[}\$int\mbox{]}} & \$type \mbox{[}Type of message\mbox{]} \\
+\hline
+{\em \mbox{[}\$string\mbox{]}} & \$body \mbox{[}Text adds info to message\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}J\+S\+ON\mbox{]} \mbox{[}Not be to be read.\mbox{]} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_messages_ab31369bc9c8f31518ed38c1949beb791}\label{class_messages_ab31369bc9c8f31518ed38c1949beb791}} 
+\index{Messages@{Messages}!D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}}
+\index{D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{D\+E\+L\+E\+T\+E()}{DELETE()}}
+{\footnotesize\ttfamily D\+E\+L\+E\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}D\+E\+L\+E\+TE not is allow for this resource\mbox{]} \mbox{\Hypertarget{class_messages_a6155e84d5ffcbc4ae944e98f59d49935}\label{class_messages_a6155e84d5ffcbc4ae944e98f59d49935}} 
+\index{Messages@{Messages}!G\+ET@{G\+ET}}
+\index{G\+ET@{G\+ET}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{G\+E\+T()}{GET()}}
+{\footnotesize\ttfamily G\+ET (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}G\+ET Creates the correct query to retrieve the records. \mbox{]} Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{class_messages_abe4378dfc123f2572b60965349062654}\label{class_messages_abe4378dfc123f2572b60965349062654}} 
+\index{Messages@{Messages}!get\+P\+O\+S\+T\+Values@{get\+P\+O\+S\+T\+Values}}
+\index{get\+P\+O\+S\+T\+Values@{get\+P\+O\+S\+T\+Values}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{get\+P\+O\+S\+T\+Values()}{getPOSTValues()}}
+{\footnotesize\ttfamily get\+P\+O\+S\+T\+Values (\begin{DoxyParamCaption}\item[{}]{\$input }\end{DoxyParamCaption})}
+
+\mbox{[}get\+P\+O\+S\+T\+Values Overwrite parent function allowing add iduser.\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\+J\+S\+O\+N\mbox{]}} & \$input \mbox{[}pair name\+:values to be saved in DB\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}String\mbox{]} \mbox{[}Tail of insert query for the values from input\mbox{]} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{class_messages_a2a7e865a6254f6af7005197d30ad1cc0}\label{class_messages_a2a7e865a6254f6af7005197d30ad1cc0}} 
+\index{Messages@{Messages}!P\+O\+ST@{P\+O\+ST}}
+\index{P\+O\+ST@{P\+O\+ST}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{P\+O\+S\+T()}{POST()}}
+{\footnotesize\ttfamily P\+O\+ST (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}P\+O\+ST creates a new record of this resource in DB N\+O\+TE\+:Users cannot create msg.\mbox{]} Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{class_messages_afc8eb51e951dd8fad1e318be851285ef}\label{class_messages_afc8eb51e951dd8fad1e318be851285ef}} 
+\index{Messages@{Messages}!P\+UT@{P\+UT}}
+\index{P\+UT@{P\+UT}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{P\+U\+T()}{PUT()}}
+{\footnotesize\ttfamily P\+UT (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{[}P\+UT modifies the record \$key with value. N\+O\+TE\+: Users just can change R\+E\+A\+D\+ED=T\+R\+UE\mbox{]} Here is the call graph for this function\+:
+% FIG 8
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_messages_afa3b0388d92464be7fe8b3385bd4d6ad}\label{class_messages_afa3b0388d92464be7fe8b3385bd4d6ad}} 
+\index{Messages@{Messages}!\$\+M\+S\+G\+Type@{\$\+M\+S\+G\+Type}}
+\index{\$\+M\+S\+G\+Type@{\$\+M\+S\+G\+Type}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{\$\+M\+S\+G\+Type}{$MSGType}}
+{\footnotesize\ttfamily \$M\+S\+G\+Type\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= Array(\textcolor{stringliteral}{"IP\_ACCESS"}=>0,
+                                  \textcolor{stringliteral}{"ACCESS\_ATTEMPTS"}=>1,
+                                  \textcolor{stringliteral}{"DATA\_READ"}=>2)
+\end{DoxyCode}
+\mbox{\Hypertarget{class_messages_aebf9a45aba50bace51a0400cdafdd8d3}\label{class_messages_aebf9a45aba50bace51a0400cdafdd8d3}} 
+\index{Messages@{Messages}!\$resourcekey@{\$resourcekey}}
+\index{\$resourcekey@{\$resourcekey}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{\$resourcekey}{$resourcekey}}
+{\footnotesize\ttfamily \$resourcekey = \char`\"{}idmessage\char`\"{}}
+
+\mbox{\Hypertarget{class_messages_ae8876a14058f368335baccf35af4a22b}\label{class_messages_ae8876a14058f368335baccf35af4a22b}} 
+\index{Messages@{Messages}!\$table@{\$table}}
+\index{\$table@{\$table}!Messages@{Messages}}
+\subsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily \$table = \char`\"{}messages\char`\"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/resources/\mbox{\hyperlink{messages_8php}{messages.\+php}}\end{DoxyCompactItemize}

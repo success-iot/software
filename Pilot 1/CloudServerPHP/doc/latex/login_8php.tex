@@ -1,0 +1,70 @@
+\hypertarget{login_8php}{}\section{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/login.php File Reference}
+\label{login_8php}\index{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/login.\+php@{C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/login.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a6b519bd0b335c8e4ba5749a42b2e2044}{\$\+T\+I\+M\+E\+W\+A\+I\+T\+A\+T\+T\+E\+MP}} =0
+\item 
+\mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(\$session-\/$>$is\+Active\+Session()) \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(!isset(\$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\textquotesingle{}ipaddress\textquotesingle{}\mbox{]})) \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(\mbox{\hyperlink{security_8php_abddcb605984b484876498005966cc86d}{is\+I\+P\+Blocked}}()) \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(!isset(\$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\textquotesingle{}\mbox{\hyperlink{login_8php_a66bd0a4d3f2564c19188e8257c34147d}{login\+Attemp}}\textquotesingle{}\mbox{]})) \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(empty(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}username\textquotesingle{}\mbox{]})$\vert$$\vert$empty(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}password\textquotesingle{}\mbox{]})) \mbox{\hyperlink{login_8php_a8fdf19f1f601d8e738a213636ddd1c0d}{else}}
+\item 
+\mbox{\hyperlink{login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} =\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}password\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{login_8php_a3a26d65da376886516c18dee60212ac0}{\$sql\+Conn}} = new \mbox{\hyperlink{class_my_sql_conection}{My\+Sql\+Conection}}()
+\item 
+\mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}}(!isset(\$sql\+Conn)) \mbox{\hyperlink{login_8php_aba0d29cd67eb7a1e6acf4ced79608c75}{\$query}} = \char`\"{}Select iduser, rol from users where name=\textquotesingle{}\char`\"{} . \$username . \char`\"{}\textquotesingle{} and password=\textquotesingle{}\char`\"{} . \$password .\char`\"{}\textquotesingle{}\char`\"{}
+\item 
+\$session \mbox{\hyperlink{login_8php_a66bd0a4d3f2564c19188e8257c34147d}{login\+Attemp}}
+\item 
+\mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}} ( \$session-\/$>$\mbox{\hyperlink{login_8php_a66bd0a4d3f2564c19188e8257c34147d}{login\+Attemp}}==\char`\"{}3\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}} 
+\index{login.\+php@{login.\+php}!\$password@{\$password}}
+\index{\$password@{\$password}!login.\+php@{login.\+php}}
+\subsubsection{\texorpdfstring{\$password}{$password}}
+{\footnotesize\ttfamily \$password =\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}password\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{login_8php_aba0d29cd67eb7a1e6acf4ced79608c75}\label{login_8php_aba0d29cd67eb7a1e6acf4ced79608c75}} 
+\index{login.\+php@{login.\+php}!\$query@{\$query}}
+\index{\$query@{\$query}!login.\+php@{login.\+php}}
+\subsubsection{\texorpdfstring{\$query}{$query}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}} (!isset( \$sql\+Conn)) \$query = \char`\"{}Select iduser, rol from users where name=\textquotesingle{}\char`\"{} . \$username . \char`\"{}\textquotesingle{} and password=\textquotesingle{}\char`\"{} . \$password .\char`\"{}\textquotesingle{}\char`\"{}}
+
+\mbox{\Hypertarget{login_8php_a3a26d65da376886516c18dee60212ac0}\label{login_8php_a3a26d65da376886516c18dee60212ac0}} 
+\index{login.\+php@{login.\+php}!\$sql\+Conn@{\$sql\+Conn}}
+\index{\$sql\+Conn@{\$sql\+Conn}!login.\+php@{login.\+php}}
+\subsubsection{\texorpdfstring{\$sql\+Conn}{$sqlConn}}
+{\footnotesize\ttfamily \$sql\+Conn = new \mbox{\hyperlink{class_my_sql_conection}{My\+Sql\+Conection}}()}
+
+\mbox{\Hypertarget{login_8php_a6b519bd0b335c8e4ba5749a42b2e2044}\label{login_8php_a6b519bd0b335c8e4ba5749a42b2e2044}} 
+\index{login.\+php@{login.\+php}!\$\+T\+I\+M\+E\+W\+A\+I\+T\+A\+T\+T\+E\+MP@{\$\+T\+I\+M\+E\+W\+A\+I\+T\+A\+T\+T\+E\+MP}}
+\index{\$\+T\+I\+M\+E\+W\+A\+I\+T\+A\+T\+T\+E\+MP@{\$\+T\+I\+M\+E\+W\+A\+I\+T\+A\+T\+T\+E\+MP}!login.\+php@{login.\+php}}
+\subsubsection{\texorpdfstring{\$\+T\+I\+M\+E\+W\+A\+I\+T\+A\+T\+T\+E\+MP}{$TIMEWAITATTEMP}}
+{\footnotesize\ttfamily \$T\+I\+M\+E\+W\+A\+I\+T\+A\+T\+T\+E\+MP =0}
+
+\mbox{[}F\+I\+LE Manage users logins. Create new  for user if not it does no exists. Fill all  parameter needs if user gets log in. Retrieve U\+RL parameter  and  and checks if user exists in DB and password is correct for the user. Crontols the number of attempts of login.  increments the time to wait after a wrong log in attempt. More than 3 attemps calls block\+IP If user login has success creates a cookie for the user. return 0 or 1 and cookies\mbox{]} \mbox{\Hypertarget{login_8php_a8fdf19f1f601d8e738a213636ddd1c0d}\label{login_8php_a8fdf19f1f601d8e738a213636ddd1c0d}} 
+\index{login.\+php@{login.\+php}!else@{else}}
+\index{else@{else}!login.\+php@{login.\+php}}
+\subsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}{if}} ( \$sql\+Conn-\/$>$get\+Nrows()$>$0) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+     
+        $username=$\_REQUEST[\textcolor{stringliteral}{'username'}]
+\end{DoxyCode}
+\mbox{\Hypertarget{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}\label{login_8php_a1e9ad7645a82f87ff70cac2447de1c76}} 
+\index{login.\+php@{login.\+php}!if@{if}}
+\index{if@{if}!login.\+php@{login.\+php}}
+\subsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(\$session-\/$>$\mbox{\hyperlink{login_8php_a66bd0a4d3f2564c19188e8257c34147d}{login\+Attemp}}==\char`\"{}3\char`\"{})}
+
+\mbox{\Hypertarget{login_8php_a66bd0a4d3f2564c19188e8257c34147d}\label{login_8php_a66bd0a4d3f2564c19188e8257c34147d}} 
+\index{login.\+php@{login.\+php}!login\+Attemp@{login\+Attemp}}
+\index{login\+Attemp@{login\+Attemp}!login.\+php@{login.\+php}}
+\subsubsection{\texorpdfstring{login\+Attemp}{loginAttemp}}
+{\footnotesize\ttfamily \$session login\+Attemp}
+

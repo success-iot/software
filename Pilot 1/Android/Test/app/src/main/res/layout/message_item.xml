@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/header"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/message_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:text="Code: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/message_code"
+            android:background="@color/text" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/message_code"
+            android:text="Body"
+            android:paddingTop="30dp"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text"
+            android:layout_below="@id/body"/>
+            <TextView
+                android:id="@+id/message_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@id/body"
+                android:paddingTop="10dp"/>
+
+            <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_body"
+                android:layout_marginTop="168dp"
+                android:layout_toEndOf="@+id/message_body"
+                android:layout_toRightOf="@+id/message_body"
+                android:onClick="markReaded"
+                android:text="Mark as read" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".emotional_test">
+
+    <include layout="@layout/header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00C6FF">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How do you feel today?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/happy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:background="#C8E6C9"
+        android:layout_marginBottom="10dp"
+        android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/happy"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                 android:src="@drawable/happy"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/happy"
+
+                    android:textAlignment="center"
+                    android:paddingTop="25dp"
+                    android:text="Happy"
+                    android:textColor="#000222"
+                    android:textSize="30dp"
+                    />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/normal_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#dcdcdc"
+
+        android:paddingLeft="50dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/normal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left"
+            android:src="@drawable/normal"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/normal"
+            android:textAlignment="center"
+            android:paddingTop="25dp"
+            android:text="Normal"
+            android:textColor="#000222"
+            android:textSize="30dp"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/sad_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#FC373A"
+            android:paddingLeft="50dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:id="@+id/sad"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left"
+            android:src="@drawable/sad"
+            android:layout_weight="1"
+
+             />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sad"
+
+            android:textAlignment="center"
+            android:paddingTop="25dp"
+            android:text="Sad"
+            android:textColor="#000222"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
