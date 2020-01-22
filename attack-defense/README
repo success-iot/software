@@ -1,0 +1,45 @@
+
+	Attack-Defense Exploration Tool
+	-------------------------------
+
+1. Description
+
+This directory provides the implementation of the attack-defense
+exploration method published in the paper:
+
+  Braham Lotfi Mediouni, Ayoub Nouri, Marius Bozga,
+  Axel Legay, Saddek Bensalem:
+  Mitigating Security Risks Through Attack Strategies Exploration.
+  Leveraging Applications of Formal Methods, Verification
+  and Validation - 8th International Symposium, ISoLA 2018
+  Proceedings Part II, LNCS 11245:392-413
+
+An extented technical report is available online at
+  http://www-verimag.imag.fr/TR/TR-2018-4.pdf
+
+
+2. Compilation Instructions
+
+- Java 11 is required to compile sources
+
+- Download ANTLR v4 (version antlr-4.7-complete.jar)
+from https://www.antlr.org/download/index.html.
+Place the jar file into the attack-defense/lib directory.
+
+- Use ant to compile and run the application as follows
+
+    $ ant compile
+    $ ant jar
+    $ ant run
+
+
+3. Benchmarks
+
+Several benchmarks are auto-coded in the src/main/Main.java file.
+Every benchmark can be be selected by un/commenting the appropriate
+line in the above file (lines 292-295).
+
+
+4. Contact
+
+marius.bozga@univ-grenoble-alpes.fr
