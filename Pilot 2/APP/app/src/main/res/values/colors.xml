@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="background">#303F9F</color>
+    <color name="head">#00173b</color>
+    <color name="title">#cddbf1</color>
+    <color name="trans">#00000000 </color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text">#454545</color>
+    <color name="backgroundList">#afafaf</color>
+    <color name="red">#ff7e7e</color>
+    <color name="rojo">#ff0000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="access">#c6ffa2</color>
+    <color name="noaccess">#ff7777</color>
+</resources>

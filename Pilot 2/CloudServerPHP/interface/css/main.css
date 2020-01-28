@@ -1,0 +1,226 @@
+body{
+  font-family: verdana;
+  color:black;
+  top: 20%;
+  max-width: 1200px;
+  margin: auto;
+  background: #d6f6ff;
+
+}
+
+#header{
+
+}
+
+h1{
+  text-align: center;
+  font-size: 3.5em;
+  color: #7dd8ce;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+#logout{
+  margin: 10px;
+    float: right;
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius: 10px 10px;
+    border: 1px solid grey;
+}
+
+div.login{
+  border: 2px solid black;
+padding: 0 20px;
+width: 25%;
+margin: auto;
+text-align: center;
+box-shadow: grey 1px 7px 9px;
+border-radius: 25px 25px;
+background: #7dd8ce;
+}
+
+div.login button{
+  float: none;
+  margin: 20px;
+  font-size: 1em;
+  padding: 8px;
+  border-radius: 10px 10px;
+  border: 1px solid grey;
+}
+#errorlogin{
+  color:red;
+  font-size: 0.9em;
+}
+
+#content{
+  border: 1px solid grey;
+    background: white;
+    padding: 0 20px;
+}
+
+#userinfo{
+  text-align: right;
+    font-size: 0.7em;
+    float: right;
+    margin: 4px;
+}
+
+ul#menu {
+  width: 107%;
+    padding: 5px;
+    margin-left: -50px;
+    border: 3px solid #848382;
+    background: #7dd8ce;
+    box-shadow: grey 1px 2px 3px;
+}
+
+
+ul#menu  li{
+  display: inline;
+    width: 25%;
+    background: #7dd8ce;
+    color: black;
+    font-size: 1.7em;
+    padding: 2px 1em;
+}
+
+#menu ul li.active{
+  background: black;
+  color:white;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+}
+#menu li a:hover {
+  color: black;
+}
+
+#info{
+    min-height: 700px;
+}
+#info > div{
+    display: none;
+    /*width: 65%;*/
+}
+
+#info > div.active{
+    display: block;
+}
+
+#statistic{
+  float: right;
+margin: 2% 0px 0px 0px;
+padding: 0px 10px;
+border: 2px solid grey;
+display: none;
+min-width: 240px;
+box-shadow: grey 0px 2px 3px;
+}
+
+/***********/
+/* CONTENT */
+div#info div ul {
+    width: 65%;
+  }
+div#info div ul li{
+  list-style: none;
+      font-size: 0.9em;
+      padding: 7px 5px 5px 5px;
+      border-bottom: 1px solid grey;
+      box-shadow: grey 0px 1px 0px;
+}
+
+div#info div ul li:hover, li.active  {
+    background: aliceblue;
+    font-weight: 600;
+}
+
+div#info div ul li div{
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 1em;
+  padding: 20px 0px;
+  font-weight: 100;
+}
+button {
+  font-family: verdana;
+  font-size: 0.8em;
+  box-shadow: grey 1px 1px 2px;
+  margin: 5px;
+}
+
+#foot{
+  padding: 40px;
+  text-align: center;
+}
+#foot img{
+  border: 1px solid grey;
+  width: 180px;
+height: 80px;
+
+}
+#formRequest{
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: grey 0px 6px 11px;
+}
+
+#popup{
+  padding: 50px;
+
+position: absolute;
+top: 45%;
+left: 45%;
+background: white;
+border: 3px solid black;
+box-shadow: grey 0px 2px 4px;
+width: auto;
+}
+
+#selectUser{
+    margin-left: 5px;
+    min-width: 200px;
+}
+
+.notread{
+    background: red;
+}
+
+.nofilter {
+    display: none !important;
+}
+
+#data>div {
+    border-bottom: 1px solid grey;
+}
+
+.close{
+    text-align: right;
+    margin: -10px 0px;
+}
+
+.close a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.msg{
+  font-size: 0.8em;
+    color: red;
+}
+
+p {
+    margin: 5px 0px;
+}

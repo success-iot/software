@@ -1,0 +1,32 @@
+
+.points:after{
+    content: " ...";
+    border:none;
+    /* border-left: 1px solid grey; */
+    padding: 0px 3px;
+    margin-left: 3px;
+}
+
+p.pager{
+  text-align: center;
+  font-size: 0.8em;
+  font-family: verdana;
+  color: black;
+  width: 70%;
+}
+
+a.page{
+  text-decoration: none;
+color: grey;
+border-bottom: 1px solid grey;
+padding: 0px 4px;
+}
+
+a.page:hover {
+  color: black;
+  font-size: 1em;
+}
+a.page.active{
+  color: black;
+  font-weight: 600;
+}

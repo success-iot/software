@@ -1,0 +1,150 @@
+\hypertarget{class_session}{}\section{Session Class Reference}
+\label{class_session}\index{Session@{Session}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_session_a1e201c0957bc704471a78cd492174871}{start\+Session}} ()
+\item 
+\mbox{\hyperlink{class_session_abb17bf50828c55bc3207ac605a5c3088}{is\+Active\+Session}} ()
+\item 
+\mbox{\hyperlink{class_session_ab5037276ea3c15db77508b58c09ac59e}{\+\_\+\+\_\+set}} ( \$name, \$value)
+\item 
+\mbox{\hyperlink{class_session_acc8847f87313d5e08ad460225ca99e3b}{\+\_\+\+\_\+get}} ( \$name)
+\item 
+\mbox{\hyperlink{class_session_aeea656aa2c004061049f3896c564ccf0}{\+\_\+\+\_\+isset}} ( \$name)
+\item 
+\mbox{\hyperlink{class_session_a1a50a7a2fced40bf8afc1d437cbb8907}{\+\_\+\+\_\+unset}} ( \$name)
+\item 
+\mbox{\hyperlink{class_session_aa118461de946085fe42989193337044a}{destroy}} ()
+\item 
+\mbox{\hyperlink{class_session_a813b222d556e555333c2313e17b05bce}{get\+Json}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_session_ac93fbec81f07e5d15f80db907e63dc10}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_session_aeb8c4b9d65462d40a3aa64f0bcbb7921}{S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED}} = T\+R\+UE
+\item 
+const \mbox{\hyperlink{class_session_a94b9c32892bf9caa605c3ed51a60e2f1}{S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED}} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{class_session}{Session}} manages the server sesssions using \$\+\_\+\+S\+E\+S\+S\+I\+ON var \mbox{]} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_session_acc8847f87313d5e08ad460225ca99e3b}\label{class_session_acc8847f87313d5e08ad460225ca99e3b}} 
+\index{Session@{Session}!\+\_\+\+\_\+get@{\+\_\+\+\_\+get}}
+\index{\+\_\+\+\_\+get@{\+\_\+\+\_\+get}!Session@{Session}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+get()}{\_\_get()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Gets datas from the session. Example\+: echo \$instance-\/$>$foo;
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the datas to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Datas stored in session. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_aeea656aa2c004061049f3896c564ccf0}\label{class_session_aeea656aa2c004061049f3896c564ccf0}} 
+\index{Session@{Session}!\+\_\+\+\_\+isset@{\+\_\+\+\_\+isset}}
+\index{\+\_\+\+\_\+isset@{\+\_\+\+\_\+isset}!Session@{Session}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+isset()}{\_\_isset()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+isset (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_session_ab5037276ea3c15db77508b58c09ac59e}\label{class_session_ab5037276ea3c15db77508b58c09ac59e}} 
+\index{Session@{Session}!\+\_\+\+\_\+set@{\+\_\+\+\_\+set}}
+\index{\+\_\+\+\_\+set@{\+\_\+\+\_\+set}!Session@{Session}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+set()}{\_\_set()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+set (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Stores datas in the session. Example\+: \$instance-\/$>$foo = \textquotesingle{}bar\textquotesingle{};
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the datas. \\
+\hline
+{\em value} & Your datas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_a1a50a7a2fced40bf8afc1d437cbb8907}\label{class_session_a1a50a7a2fced40bf8afc1d437cbb8907}} 
+\index{Session@{Session}!\+\_\+\+\_\+unset@{\+\_\+\+\_\+unset}}
+\index{\+\_\+\+\_\+unset@{\+\_\+\+\_\+unset}!Session@{Session}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+unset()}{\_\_unset()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+unset (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_session_aa118461de946085fe42989193337044a}\label{class_session_aa118461de946085fe42989193337044a}} 
+\index{Session@{Session}!destroy@{destroy}}
+\index{destroy@{destroy}!Session@{Session}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys the current session.
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE is session has been deleted, else F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_ac93fbec81f07e5d15f80db907e63dc10}\label{class_session_ac93fbec81f07e5d15f80db907e63dc10}} 
+\index{Session@{Session}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Session@{Session}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns T\+HE instance of \textquotesingle{}\mbox{\hyperlink{class_session}{Session}}\textquotesingle{}. The session is automatically initialized if it wasn\textquotesingle{}t.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_a813b222d556e555333c2313e17b05bce}\label{class_session_a813b222d556e555333c2313e17b05bce}} 
+\index{Session@{Session}!get\+Json@{get\+Json}}
+\index{get\+Json@{get\+Json}!Session@{Session}}
+\subsubsection{\texorpdfstring{get\+Json()}{getJson()}}
+{\footnotesize\ttfamily get\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_session_abb17bf50828c55bc3207ac605a5c3088}\label{class_session_abb17bf50828c55bc3207ac605a5c3088}} 
+\index{Session@{Session}!is\+Active\+Session@{is\+Active\+Session}}
+\index{is\+Active\+Session@{is\+Active\+Session}!Session@{Session}}
+\subsubsection{\texorpdfstring{is\+Active\+Session()}{isActiveSession()}}
+{\footnotesize\ttfamily is\+Active\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_session_a1e201c0957bc704471a78cd492174871}\label{class_session_a1e201c0957bc704471a78cd492174871}} 
+\index{Session@{Session}!start\+Session@{start\+Session}}
+\index{start\+Session@{start\+Session}!Session@{Session}}
+\subsubsection{\texorpdfstring{start\+Session()}{startSession()}}
+{\footnotesize\ttfamily start\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(Re)starts the session.
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE if the session has been initialized, else F\+A\+L\+SE. 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_session_a94b9c32892bf9caa605c3ed51a60e2f1}\label{class_session_a94b9c32892bf9caa605c3ed51a60e2f1}} 
+\index{Session@{Session}!S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED@{S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED}}
+\index{S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED@{S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED}!Session@{Session}}
+\subsubsection{\texorpdfstring{S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED}{SESSION\_NOT\_STARTED}}
+{\footnotesize\ttfamily const S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+R\+T\+ED = F\+A\+L\+SE}
+
+\mbox{\Hypertarget{class_session_aeb8c4b9d65462d40a3aa64f0bcbb7921}\label{class_session_aeb8c4b9d65462d40a3aa64f0bcbb7921}} 
+\index{Session@{Session}!S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED@{S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED}}
+\index{S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED@{S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED}!Session@{Session}}
+\subsubsection{\texorpdfstring{S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED}{SESSION\_STARTED}}
+{\footnotesize\ttfamily const S\+E\+S\+S\+I\+O\+N\+\_\+\+S\+T\+A\+R\+T\+ED = T\+R\+UE}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/security/\mbox{\hyperlink{session_8php}{session.\+php}}\end{DoxyCompactItemize}

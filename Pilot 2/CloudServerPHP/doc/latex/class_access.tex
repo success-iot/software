@@ -1,0 +1,118 @@
+\hypertarget{class_access}{}\section{Access Class Reference}
+\label{class_access}\index{Access@{Access}}
+
+
+Inheritance diagram for Access\+:
+% FIG 0
+
+
+Collaboration diagram for Access\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_access_a7490aac9922424f1e605adf9cda9a78b}{G\+ET}} (\$key)
+\item 
+\mbox{\hyperlink{class_access_a2a7e865a6254f6af7005197d30ad1cc0}{P\+O\+ST}} ()
+\item 
+\mbox{\hyperlink{class_access_a2a21af1d6aaaa31249485c753b86eba1}{P\+UT}} ()
+\item 
+\mbox{\hyperlink{class_access_ab31369bc9c8f31518ed38c1949beb791}{D\+E\+L\+E\+TE}} ()
+\item 
+\mbox{\hyperlink{class_access_aa70acba6d8f9c9393f138139449e2cff}{create\+Row}} (\$id2user)
+\item 
+\mbox{\hyperlink{class_access_a51906b13f88008ec2d5de18598b01216}{delete\+Row}} (\$id2user)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_access_ae8876a14058f368335baccf35af4a22b}{\$table}} = \char`\"{}access\char`\"{}
+\item 
+\mbox{\hyperlink{class_access_aebf9a45aba50bace51a0400cdafdd8d3}{\$resourcekey}} = \textquotesingle{}idaccess\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{[}\mbox{\hyperlink{class_access}{Access}} manages the C\+R\+UD methods for access resource of DB. This resource represents who users (secondary or so on) have access to other primary users outcomes.\mbox{]} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_access_aa70acba6d8f9c9393f138139449e2cff}\label{class_access_aa70acba6d8f9c9393f138139449e2cff}} 
+\index{Access@{Access}!create\+Row@{create\+Row}}
+\index{create\+Row@{create\+Row}!Access@{Access}}
+\subsubsection{\texorpdfstring{create\+Row()}{createRow()}}
+{\footnotesize\ttfamily create\+Row (\begin{DoxyParamCaption}\item[{}]{\$id2user }\end{DoxyParamCaption})}
+
+\mbox{[}create\+Row creates a access record in DB. Kernel use only.\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string/int\mbox{]}} & \$id2user \mbox{[}User who has access to current user resources(Session-\/$>$userid) \mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}J\+S\+ON\mbox{]} \mbox{[}state operation\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_access_ab31369bc9c8f31518ed38c1949beb791}\label{class_access_ab31369bc9c8f31518ed38c1949beb791}} 
+\index{Access@{Access}!D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}}
+\index{D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}!Access@{Access}}
+\subsubsection{\texorpdfstring{D\+E\+L\+E\+T\+E()}{DELETE()}}
+{\footnotesize\ttfamily D\+E\+L\+E\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}D\+E\+L\+E\+TE Not access resource records can be deleted. See delete\+Row\mbox{]} \mbox{\Hypertarget{class_access_a51906b13f88008ec2d5de18598b01216}\label{class_access_a51906b13f88008ec2d5de18598b01216}} 
+\index{Access@{Access}!delete\+Row@{delete\+Row}}
+\index{delete\+Row@{delete\+Row}!Access@{Access}}
+\subsubsection{\texorpdfstring{delete\+Row()}{deleteRow()}}
+{\footnotesize\ttfamily delete\+Row (\begin{DoxyParamCaption}\item[{}]{\$id2user }\end{DoxyParamCaption})}
+
+\mbox{[}delete\+Row deletes a access record in DB. Kernel use only\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string/int\mbox{]}} & \$id2user \mbox{[}iduser whose wanted to delete access to access current user (Session-\/$>$userid)\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}J\+S\+ON\mbox{]} \mbox{[}state operation\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_access_a7490aac9922424f1e605adf9cda9a78b}\label{class_access_a7490aac9922424f1e605adf9cda9a78b}} 
+\index{Access@{Access}!G\+ET@{G\+ET}}
+\index{G\+ET@{G\+ET}!Access@{Access}}
+\subsubsection{\texorpdfstring{G\+E\+T()}{GET()}}
+{\footnotesize\ttfamily G\+ET (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{[}G\+ET Creates the correct query to retrieve the records. \mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}type\mbox{]}} & \$key \mbox{[}Retrieve just the \$key record comparing with \$resourcekey var C\+L\+A\+SS\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_access_a2a7e865a6254f6af7005197d30ad1cc0}\label{class_access_a2a7e865a6254f6af7005197d30ad1cc0}} 
+\index{Access@{Access}!P\+O\+ST@{P\+O\+ST}}
+\index{P\+O\+ST@{P\+O\+ST}!Access@{Access}}
+\subsubsection{\texorpdfstring{P\+O\+S\+T()}{POST()}}
+{\footnotesize\ttfamily P\+O\+ST (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}P\+O\+ST Not \mbox{\hyperlink{class_access}{Access}} resource records can be created by users. See create\+Row\mbox{]} \mbox{\Hypertarget{class_access_a2a21af1d6aaaa31249485c753b86eba1}\label{class_access_a2a21af1d6aaaa31249485c753b86eba1}} 
+\index{Access@{Access}!P\+UT@{P\+UT}}
+\index{P\+UT@{P\+UT}!Access@{Access}}
+\subsubsection{\texorpdfstring{P\+U\+T()}{PUT()}}
+{\footnotesize\ttfamily P\+UT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{[}P\+UT Not access resource records can be modified.\mbox{]} 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_access_aebf9a45aba50bace51a0400cdafdd8d3}\label{class_access_aebf9a45aba50bace51a0400cdafdd8d3}} 
+\index{Access@{Access}!\$resourcekey@{\$resourcekey}}
+\index{\$resourcekey@{\$resourcekey}!Access@{Access}}
+\subsubsection{\texorpdfstring{\$resourcekey}{$resourcekey}}
+{\footnotesize\ttfamily \$resourcekey = \textquotesingle{}idaccess\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_access_ae8876a14058f368335baccf35af4a22b}\label{class_access_ae8876a14058f368335baccf35af4a22b}} 
+\index{Access@{Access}!\$table@{\$table}}
+\index{\$table@{\$table}!Access@{Access}}
+\subsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily \$table = \char`\"{}access\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Josegines1/\+Documents/\+Cloud\+Server\+P\+H\+P/resources/\mbox{\hyperlink{access_8php}{access.\+php}}\end{DoxyCompactItemize}
