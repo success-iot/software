@@ -1,0 +1,41 @@
+# attacks
+
+attack uar  50 [0,20] 0.08
+attack  lv  60 [0,20] 0.07
+attack ela  70 [0,20] 0.15
+attack ewa 100 [0,20] 0.20
+attack dbf 150 [0,20] 0.10
+attack dbg 190 [0,20] 0.40
+attack dbw 100 [0,20] 0.10
+attack  oc 110 [0,20] 0.10
+attack cmf  90 [0,20] 0.10
+attack cmc 250 [0,20] 0.25
+attack cmu 275 [0,20] 0.30
+attack  mu 100 [0,20] 0.20
+attack vop 120 [0,20] 0.15
+attack  pc 100 [0,20] 0.15
+attack  sn  30 [0,20] 0.18
+attack  rt  40 [0,20] 0.12
+attack sme 170 [0,20] 0.50
+
+
+# defense
+
+defense dva true
+defense tpt true
+
+
+# attack-defense tree
+
+tree
+ ( (uar || (lv && (!dva))) )
+|| (( ela || ewa ) || (dbf || dbg || dbw) || (oc) || (cmf || cmc || cmu))
+|| (mu && vop)
+|| ((pc) || ( (sn || rt) && (!tpt)) || (sme))
+end
+
+
+# max values
+
+max cost 50000
+max time 300

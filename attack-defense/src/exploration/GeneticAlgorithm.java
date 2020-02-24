@@ -149,7 +149,7 @@ public class GeneticAlgorithm {
 			population.ExtremeRankElitism(ExplorationType.BI_OBJECTIVE ,population_size, ERE_ratio);
 			
 //			System.out.println("\nGeneration "+ (i+1)+" : "+ population);
-			System.out.print((i+1));
+//			System.out.print((i+1));
 		}
 //		System.out.println(population);
 	}

@@ -1,0 +1,29 @@
+
+# attacks
+
+attack sm  50 [0,20] 0.70
+attack no  60 [0,20] 0.70
+attack op  70 [0,20] 0.70
+attack ka 100 [0,20] 0.70
+attack sa 150 [0,20] 0.42
+attack ar 190 [0,20] 0.65
+
+# defenses
+
+defense au false
+defense rn false
+defense sr false
+
+# attack-defense tree
+
+tree
+
+( ( ( sm || no || op || ka ) && (sa && (!au)) ) && (!rn) ) ||
+  ( ar && (!sr))
+
+end
+
+# max values
+
+max cost 50000
+max time 400

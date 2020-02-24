@@ -1,0 +1,29 @@
+# attacks 
+
+attack  is  80  [0,20] 0.8
+attack  bs 100  [0,20] 0.7
+attack   t 700  [0,20] 0.7
+attack   b 700  [0,20] 0.7
+attack  st  50  [0,20] 0.5
+attack  ba  85  [0,20] 0.6
+attack  im  70  [0,20] 0.5
+attack  ot   0  [0,20] 0.6
+
+# defenses
+
+defense t1 true
+defense t2 false
+defense tf true
+defense at true
+
+# attack-defense tree
+
+tree (is && bs && ((!t1) || (!tf) )) ||
+  (t) ||
+  ( (!t2) && ( (st) || ( im && ot && ( ba || (!at)) ) )) ||
+  (b) end
+
+# max values
+
+max cost 50000
+max time 300
