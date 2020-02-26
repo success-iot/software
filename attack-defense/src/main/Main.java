@@ -159,7 +159,9 @@ public class Main {
 		
 	DefenseConstructor defConst = new DefenseConstructor(GA);
 	defConst.buildDefense(0.05);
-	System.out.println("\n" + defConst.getDefender());
+
+	D = defConst.getDefender();
+	System.out.println("\n" + D);
  		
 	System.out.println("\nExecution time : "+ (System.currentTimeMillis() - t) + "ms");
     }
@@ -310,7 +312,7 @@ public class Main {
 	// System.out.println(tree);
 
 	if (args.length != 1) {
-	    System.out.println("usage");
+	    System.out.println("usage: adt.sh <adtfile>");
 	    System.exit(-1);
 	}
 	
@@ -338,7 +340,12 @@ public class Main {
 	// m.testLS(); 		
 	m.testDefenseConstructor();
 	// m.testGAwithStatistics();
- 		
+
+	AttackDefenseExporter ade = new AttackDefenseExporter(tree, m.D);
+	String dotfilename = args[0].endsWith(".adt") ?
+	    args[0].substring(0, args[0].length() - 3) + "dot" :
+	    args[0] + ".dot";
+	ade.dotExport( dotfilename );
     }		
     
     private double standardDeviation(double[]  costs, double mean) {
