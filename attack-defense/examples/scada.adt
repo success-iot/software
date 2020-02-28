@@ -1,0 +1,38 @@
+
+# attacks
+
+attack    s1 100 [0,20] 0.10
+attack    s2 110 [0,20] 0.10
+attack    s3  90 [0,20] 0.10
+attack   wse 250 [0,20] 0.25
+attack  ulan 275 [0,20] 0.30
+attack   hmi 100 [0,20] 0.15
+attack scopf 120 [0,20] 0.15
+attack    g1 100 [0,20] 0.09
+attack    g2  30 [0,20] 0.15
+attack    g3  40 [0,20] 0.08
+attack    db 170 [0,20] 0.50
+attack  uwan 160 [0,20] 0.35
+attack    ws 150 [0,20] 0.40
+
+# defenses
+
+defense   sw false
+defense rst1 false
+defense rst2 false
+defense rst3 false
+
+# attack-defense tree
+
+tree
+
+((( (s1 && s2) || (s1 && s3) || (s2 && s3)) || (wse)) || (ulan) || ( ( ( (hmi)&& (!sw)) && (scopf) )
+     || ((g1 && (!rst1)) && ((g2 && (!rst2)) && (g3 && (!rst3)) ))) )
+|| (db || uwan ||ws)
+
+end
+
+# max values
+
+max cost 50000
+max time 300

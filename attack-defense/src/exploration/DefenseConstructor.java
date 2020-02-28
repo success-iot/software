@@ -43,6 +43,7 @@ public class DefenseConstructor {
 		do {
 			improved = false;
 			reset(gain);
+			System.out.println("");
 			System.out.println(this.defender);
 			GA.explore(ExplorationType.BI_OBJECTIVE);
 			double cost_with_def = GA.getBestIndividual(ExplorationType.BI_OBJECTIVE).getCost();

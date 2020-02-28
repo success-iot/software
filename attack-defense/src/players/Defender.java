@@ -59,7 +59,7 @@ public class Defender {
 	public String toString() {
 		String S = "Defender: \n";
 		S += Arrays.toString(actions)+"\n";
-		S += Arrays.toString(defenses)+"\n";
+		S += Arrays.toString(defenses);
 		return S;
 	}
 

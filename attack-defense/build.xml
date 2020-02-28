@@ -21,7 +21,9 @@
     
     <target name="run">
       <java classpath="build/jar/attack-defense.jar:lib/antlr-4.7-complete.jar"
-	    classname="main.Main"/>
+	    classname="main.Main">
+	<arg value="${adtfile}"/>
+      </java>
     </target>
     
 </project>

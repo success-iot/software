@@ -30,15 +30,23 @@ Place the jar file into the attack-defense/lib directory.
 
     $ ant compile
     $ ant jar
-    $ ant run
 
 
 3. Benchmarks
 
-Several benchmarks are auto-coded in the src/main/Main.java file.
-Every benchmark can be be selected by un/commenting the appropriate
-line in the above file (lines 292-295).
+Several benchmarks are included in the examples directory.
+Every benchmark can be run by calling
 
+   $ bin/adt.sh <behnchmark>.adt
+
+where <benchmark> can be actually one of orga, bgp, scada or im.
+On completion, the attack tree annotated with the most
+impactful defender will be exported in <benchmark>.dot.
+
+Optional, the tool can be invoked from the ant script
+
+   $ ant run -Dadtfile=examples/<benchmark>.adt
+   
 
 4. Contact
 
